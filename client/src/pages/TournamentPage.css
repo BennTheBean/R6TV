@@ -1,0 +1,32 @@
+.TournamentPage {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #ffffff;
+}
+
+.TournamentPage .content-container {
+  display: flex;
+}
+
+.tournaments-container {
+  width:30%;
+}
+
+.TournamentPage .matches-container {
+  width: 70%;
+}
+
+.TournamentPage h1 {
+  color: #8D858C;
+}
+
+@media (max-width: 800px) {
+  .TournamentPage .matches-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .TournamentPage h1 {
+    font-size: smaller;
+  }
+}

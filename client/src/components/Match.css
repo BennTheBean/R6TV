@@ -1,0 +1,94 @@
+.match-container {
+  width: 30%;
+  display: inline-block;
+  margin: 10px;
+  vertical-align: top;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.match-date {
+  font-size: 0.9em;
+  color: #ffffff;
+  font-weight: lighter;
+}
+
+.match-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2f2f2f;
+  border-radius: 10px;
+  padding: 10px;
+  color: #ffffff;
+  position: relative;
+  height: 100%; /* Adjust height as needed */
+}
+
+.team-side {
+  width: 40%;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.team-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.team-tag {
+  margin-top: 5px;
+  font-size: 0.8em;
+}
+
+.elo-change {
+  font-size: 0.8em;
+}
+
+.match-score span{
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 20%;
+  text-align: center;
+}
+
+.increase {
+  color: green;
+}
+
+.decrease {
+  color: red;
+}
+
+.winner-left {
+  background: linear-gradient(to right, rgba(0, 128, 0, 0.4), transparent);
+}
+
+.winner-right {
+  background: linear-gradient(to left, rgba(0, 128, 0, 0.4), transparent);
+}
+
+/* For screens wider than 800px, keep 3 match cards per row */
+@media (min-width: 801px) {
+  .match-container {
+    width: 30%; /* Adjust this if you want slightly smaller/larger cards */
+  }
+}
+
+/* For screens between 600px and 800px, reduce to 2 match cards per row */
+@media (max-width: 800px) and (min-width: 601px) {
+  .match-container {
+    width: 45%; /* Adjust this to control the card size */
+  }
+}
+
+/* For screens narrower than 600px, reduce to 1 match card per row */
+@media (max-width: 600px) {
+  .match-container {
+    width: 95%; /* Full width with some margin */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

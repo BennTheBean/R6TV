@@ -1,0 +1,84 @@
+.TeamPage {
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.TeamPage .content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.TeamPage .info-container {
+  width: 25%;
+  background-color: #2a2a2a;
+  padding: 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  align-self: flex-start;
+}
+
+.TeamPage .team-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.TeamPage .header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 15px; 
+}
+
+.TeamPage .logo {
+  width: 80px;
+  height: auto;
+}
+
+.TeamPage h2 {
+  font-size: 24px;
+  margin: 2px 0;
+}
+
+.TeamPage h3 {
+  text-align: center;
+}
+
+.TeamPage h4 {
+  font-size: 16px;
+  color: #8D858C;
+  margin: 2px 0;
+}
+
+.TeamPage .matches-container {
+  width: 70%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 800px) {
+  .TeamPage .content-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .TeamPage .matches-container,
+  .TeamPage .info-container {
+      width: 75%;
+  }
+
+
+  .TeamPage .header-text {
+      margin-left: 0;
+  }
+
+  .TeamPage .logo {
+      width: 60px;
+      height: auto;
+  }
+}

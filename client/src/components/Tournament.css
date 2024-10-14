@@ -1,0 +1,55 @@
+.tourny-container {
+    width: 40%;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.tourny-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2f2f2f;
+    border-radius: 10px;
+    padding: 10px;
+    color: #ffffff;
+    position: relative;
+    height: 50px;
+    cursor: pointer;
+}
+
+.tourny-container :hover {
+    background-color: #8D858C;
+}
+
+.tournament-logo {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.tournament-dates {
+    font-size: smaller;
+}
+
+@media (max-width: 800px) {
+    .tourny-container {
+        width: 75%;
+        margin: 5px 0;
+    }
+
+    .tourny-card {
+        height: auto;
+        padding: 15px;
+    }
+
+    .tournament-logo {
+        width: 25px;
+        height: 25px;
+    }
+
+    .tournament-dates {
+        display: none;
+    }
+} 
